@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattheus | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navegacao"> <!-- NAV serve para criar menu de navegação -->
+        <ul class="displayFlex gap10"> <!-- UL é lista -->
+            <li class="displayFlex"> <!-- Li é cada item da lista -->
+                <a href="#home" class="menu-link">Inicio</a>
+                <!-- a significa que é um link, que será direcionado para algum lugar -->
+            </li>
+            <li class="displayFlex">
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li class="displayFlex">
+                <a href="#skills" class="menu-link">Habilidades</a>
+            </li>
+            <li class="displayFlex">
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li class="displayFlex">
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+            <!-- BOTAO LIGHT MODE -->
+            <li class="displayFlex">
+                <button id="theme-toggle" class="btn-theme">🌙</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- INICIO CABECALHO -->
+    <main id="home" class="cabecalho">
+        <img src="/img/foto_mattheus.png" alt="Foto Mattheus Ferreira" class="foto-perfil">
+        <h1>Mattheus Ferreira</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+    </main>
+
+    <!-- FIM CABECALHO -->
+
+    <!-- INICIO SOBRE -->
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam nulla
+                alias est fugit dolorum? Odio vitae aliquam rerum deleniti sequi dicta, quibusdam tempora. Blanditiis
+                dolorem quidem cupiditate praesentium nostrum!!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto rerum aliquid error cumque
+                sapiente soluta porro voluptate quibusdam amet? Consectetur expedita voluptate natus beatae ut facere
+                unde. Dolor, laboriosam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam nulla
+                alias est fugit dolorum? Odio vitae aliquam rerum deleniti sequi dicta, quibusdam tempora. Blanditiis
+                dolorem quidem cupiditate praesentium nostrum!!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto rerum aliquid error cumque
+                sapiente soluta porro voluptate quibusdam amet? Consectetur expedita voluptate natus beatae ut facere
+                unde. Dolor, laboriosam!</p>
+        </div>
+    </section>
+    <!-- FIM SOBRE -->
+
+    <!-- INICIO HABILIDADES -->
+    <section id="skills" class="skills">
+        <h2 class="skills-titulo">Minhas Habilidades</h2>
+        <div class="skills-caixa">
+            <ul>
+                <li>
+                    <h3>HTML</h3>
+                    <span class="barras"><span class="html"></span></span>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <span class="barras"><span class="css"></span></span>
+                </li>
+                <li>
+                    <h3>JAVASCRIPT</h3>
+                    <span class="barras"><span class="javascript"></span></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- FIM HABILIDADES -->
+
+    <!-- INICIO PROJETOS -->
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+
+        <div class="carrossel-container">
+
+            <!-- Botão Esquerdo -->
+            <button class="carrossel-btn prev" aria-label="Anterior">&#10094;</button>
+
+            <div class="projetos-caixa"> <!--caixa mae, ira guardar todas as outras caixinhas-->
+
+                <div class="projetos-card"> <!--caixinha 1-->
+                    <img src="/img/foto_projeto01.png" alt="Foto Projeto 1" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Portfolio</h3>
+                        <p class="paragrafo-projetos">Este site marca o início da minha trajetória, funcionando como meu
+                            portfólio digital.
+                            Estou comprometido em evoluir minhas habilidades, e este espaço será continuamente refinado
+                            e expandido para refletir meu progresso e novos projetos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projetos-card"> <!--caixinha 1-->
+                    <img src="/img/foto_projeto02.png" alt="Foto Projeto 2" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Em Construção...</h3>
+                        <p class="paragrafo-projetos">Esse projeto está em construção, aguarde até que ele seja
+                            finalizado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projetos-card"> <!--caixinha 1-->
+                    <img src="/img/foto_projeto03.png" alt="Foto Projeto 3" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Em Construção...</h3>
+                        <p class="paragrafo-projetos">Esse projeto está em construção, aguarde até que ele seja
+                            finalizado.
+                        </p>
+                    </div>
+                </div>
+                <div class="projetos-card"> <!--caixinha 1-->
+                    <img src="/img/foto_projeto04.png" alt="Foto Projeto 4" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Em Construção...</h3>
+                        <p class="paragrafo-projetos">Esse projeto está em construção, aguarde até que ele seja
+                            finalizado.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Botão Direito -->
+            <button class="carrossel-btn next" aria-label="Próximo">&#10095;</button>
+        </div>
+
+    </section>
+    <!-- FIM PROJETOS -->
+
+    <!-- INICIO CONTATO -->
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input type="text" placeholder="Nome" class="campo-form" id="nome" nome="nome" autocomplete="off">
+                <small class="mensagemErro">Erro no nome</small>
+            </div>
+            <div class="grupo-form">
+                <input type="tel" placeholder="Telefone" class="campo-form" id="telefone">
+                <small class="mensagemErro"></small>
+            </div>
+            <div class="grupo-form">
+                <input type="email" placeholder="Email" class="campo-form" id="email">
+                <small class="mensagemErro"></small>
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
+                <small class="mensagemErro"></small>
+            </div>
+            <button type="submit" class="botao-form">Enviar</button>
+        </form>
+    </section>
+    <!-- FIM CONTATO -->
+
+    <!-- INICIO RODAPE -->
+    <footer>
+        <section>
+            <footer>
+                <div class="social-icons"> <!-- div é um contêiner para os ícones. E "social-icons": é a classe que será
+                    usada no css. -->
+                    <a href="https://github.com/oN3xt" target="_blank" aria-label="GitHub"> <!-- target="_blank": Abre o link em uma nova aba do
+                        navegador. -->
+                        <img src="/img/github.webp" alt="Icone GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mattheus-ferreira-pereira-117864b6/" target="_blank"
+                        aria-label="Facebook">
+                        <img src="/img/linkedin.webp" alt="Ícone do LinkedIn">
+                    </a>
+                    <a href="https://discord.com/channels/@me" target="_blank" aria-label="Discord">
+                        <img src="/img/discord.webp" alt="Ícone do Discord">
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </footer>
+    <!-- FIM RODAPE -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
